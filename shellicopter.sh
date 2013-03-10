@@ -27,7 +27,7 @@ function contains(){
 	needle=$1
 	haystack="$2"
 	local value
-	for value in "${hackstack[*]}" do
+	for value in "${haystack[*]}" do
 		[[ $value == $needle ]] && return 1
 	done
 
